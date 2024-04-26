@@ -16,6 +16,7 @@ pipeline {
             steps {
                 sh 'echo Hello world'
                 sh 'echo Hello Universe'
+                sh 'echo ${SAMPLE_URL}'
             }
         }
     }
