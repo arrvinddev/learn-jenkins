@@ -58,8 +58,9 @@
 pipeline {
     agent any 
     stages {
-        parallel {
-            stage('One'){
+       stage('Parallel'){
+        parallel{
+             stage('One'){
                 steps {
                     sh 'echo One'
                 }
@@ -75,6 +76,9 @@ pipeline {
                     sh 'echo Three'
                 }
             }
-                    }
+        }
+
+       }
+           
     }
 }
