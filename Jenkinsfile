@@ -26,6 +26,7 @@ pipeline {
              input {
                 message "Do you Approve?"
                 ok "Yes"
+             }
             steps {
                 sh 'echo Hello world'
                 sh 'echo Hello Universe'
