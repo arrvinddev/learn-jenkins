@@ -34,6 +34,11 @@ pipeline {
                 sh 'echo PERSON - ${PERSON}'
             }
         }
+        stage('Two'){
+            steps{
+                sh 'env'
+            }
+        }
     }
 
 
